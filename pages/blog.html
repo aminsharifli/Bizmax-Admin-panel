@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bizmax Admin - Bloq</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body class="dashboard-body" data-page="blog">
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div class="brand-row">
+        <div class="brand-logo">B</div>
+        <div class="brand-copy">
+          <h1>Bizmax</h1>
+          <p>Admin panel</p>
+        </div>
+      </div>
+      <p>Əsas saytın premium hissini qoruyub admin tərəfə uyğunlaşdırdıq.</p>
+    </div>
+    <nav class="sidebar-nav">
+      <a class="nav-link" data-page="overview" href="./anasehife.html">Ana səhifə</a>
+      <a class="nav-link" data-page="services" href="./services.html">Servislər</a>
+      <a class="nav-link" data-page="blog" href="./blog.html">Bloq</a>
+      <a class="nav-link" data-page="slider" href="./slider.html">Slider</a>
+      <a class="nav-link" data-page="testimonial" href="./testimonial.html">Testimonial</a>
+      <a class="nav-link" data-page="team" href="./team.html">Komanda</a>
+      <a class="nav-link" data-page="contact" href="./contact.html">Əlaqə</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <p>Şəkil bölməsində həm URL, həm də fayl seçimi hazırdır.</p>
+      <button class="btn-secondary" id="logoutButton" type="button">Çıxış et</button>
+    </div>
+  </aside>
+  <main class="content">
+    <section class="page-hero">
+      <div class="page-hero-content">
+        <div class="page-hero-copy">
+          <p class="eyebrow">Bloq cədvəli</p>
+          <h1 id="heroTitle"></h1>
+          <p id="heroSubtitle"></p>
+        </div>
+        <span class="status-chip">Sistem aktivdir</span>
+      </div>
+    </section>
+    <section class="page-shell">
+      <div class="page-header">
+        <div>
+          <h2 id="pageTitle"></h2>
+          <p id="pageSubtitle"></p>
+        </div>
+        <div class="page-actions">
+          <button class="btn-primary btn-add" id="addButton" type="button">+</button>
+          <button class="btn-secondary btn-api" id="apiButton" type="button">API</button>
+        </div>
+      </div>
+      <article class="table-card">
+        <div class="table-scroll">
+          <table class="content-table">
+            <thead id="tableHead"></thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+  </main>
+  <div class="modal" id="modal">
+    <div class="modal-dialog">
+      <div class="modal-head">
+        <div>
+          <h3 id="modalTitle"></h3>
+          <p id="modalSubtitle"></p>
+        </div>
+        <button class="icon-button" id="closeModalButton" type="button">&times;</button>
+      </div>
+      <form class="modal-form" id="modalForm">
+        <div class="modal-grid" id="modalFields"></div>
+        <div class="modal-actions">
+          <button class="btn-secondary" id="cancelModalButton" type="button">Ləğv et</button>
+          <button class="btn-primary" type="submit">Yadda saxla</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="modal" id="apiModal">
+    <div class="modal-dialog">
+      <div class="modal-head">
+        <div>
+          <h3 id="apiModalTitle">API bağlantısı</h3>
+          <p>Bu səhifənin işlədiyi endpoint</p>
+        </div>
+        <button class="icon-button" id="closeApiModalButton" type="button">&times;</button>
+      </div>
+      <div class="api-box">
+        <span class="api-label">Endpoint</span>
+        <p class="api-text" id="apiModalText"></p>
+      </div>
+      <div class="modal-actions">
+        <button class="btn-secondary" id="cancelApiModalButton" type="button">Bağla</button>
+      </div>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="../assets/js/mainmenu.js"></script>
+  <script src="../assets/js/blog.js"></script>
+</body>
+</html>

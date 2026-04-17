@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bizmax Admin Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body class="auth-body">
+  <div class="auth-layout">
+    <section class="auth-panel">
+      <div class="auth-card">
+        <div class="brand-row">
+          <div class="brand-logo">B</div>
+          <div class="brand-copy">
+            <h1>Bizmax Admin</h1>
+          </div>
+        </div>
+        <p class="eyebrow">Login</p>
+        <h2>Panelə daxil ol</h2>
+        <form id="loginForm" class="auth-form">
+          <div class="field-group">
+            <label for="username">İstifadəçi adı</label>
+            <input type="text" id="username" placeholder="admin" required />
+          </div>
+          <div class="field-group">
+            <label for="password">Şifrə</label>
+            <input type="password" id="password" placeholder="12345" required />
+          </div>
+          <button type="submit" class="btn-primary">Daxil ol</button>
+        </form>
+        <div class="auth-tip">
+          Demo giriş: <strong>admin</strong> / <strong>12345</strong>
+        </div>
+      </div>
+    </section>
+    <section class="auth-visual">
+      <div class="auth-overlay">
+        <p class="eyebrow">Bizmax</p>
+        <h3>Minimal, aydın və premium idarəetmə</h3>
+      </div>
+    </section>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="./assets/js/login.js"></script>
+</body>
+</html>

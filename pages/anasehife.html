@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bizmax Admin - Ana səhifə</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body class="dashboard-body" data-page="overview">
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div class="brand-row">
+        <div class="brand-logo">B</div>
+        <div class="brand-copy">
+          <h1>Bizmax</h1>
+          <p>Admin panel</p>
+        </div>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <a class="nav-link" data-page="overview" href="./anasehife.html">Ana səhifə</a>
+      <a class="nav-link" data-page="services" href="./services.html">Servislər</a>
+      <a class="nav-link" data-page="blog" href="./blog.html">Bloq</a>
+      <a class="nav-link" data-page="slider" href="./slider.html">Slider</a>
+      <a class="nav-link" data-page="testimonial" href="./testimonial.html">Testimonial</a>
+      <a class="nav-link" data-page="team" href="./team.html">Komanda</a>
+      <a class="nav-link" data-page="contact" href="./contact.html">Əlaqə</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <button class="btn-secondary" id="logoutButton" type="button">Çıxış et</button>
+    </div>
+  </aside>
+
+  <main class="content">
+    <section class="page-hero">
+      <div class="page-hero-content">
+        <div class="page-hero-copy">
+          <p class="eyebrow">Dashboard</p>
+          <h1>Ana səhifə</h1>
+        </div>
+        <span class="status-chip">Sistem aktivdir</span>
+      </div>
+    </section>
+
+    <section class="stats-grid">
+      <article class="info-card"><span>Servis</span><strong id="count_services">0</strong></article>
+      <article class="info-card"><span>Bloq</span><strong id="count_blog">0</strong></article>
+      <article class="info-card"><span>Slider</span><strong id="count_slider">0</strong></article>
+      <article class="info-card"><span>Testimonial</span><strong id="count_testimonial">0</strong></article>
+      <article class="info-card"><span>Komanda</span><strong id="count_team">0</strong></article>
+      <article class="info-card"><span>Mesaj</span><strong id="count_contact">0</strong></article>
+    </section>
+
+    <section class="overview-grid">
+      <article class="summary-card">
+        <p class="eyebrow">Ümumi statistika</p>
+        <h2>Bu ay üçün qısa göstəricilər</h2>
+        <div class="summary-points">
+          <div class="summary-point"><strong>Aktiv layihə</strong><span>24</span></div>
+          <div class="summary-point"><strong>Yeni sorğu</strong><span>128</span></div>
+          <div class="summary-point"><strong>Bugünkü baxış</strong><span>4,720</span></div>
+          <div class="summary-point"><strong>Konversiya</strong><span>8.4%</span></div>
+        </div>
+      </article>
+
+      <div class="quick-links">
+        <a class="quick-link quick-link-accent" href="./services.html">
+          <strong>Servislər</strong>
+          <span class="table-subtext">Başlıq, ikon və şəkilləri yenilə.</span>
+        </a>
+        <a class="quick-link" href="./blog.html">
+          <strong>Bloq</strong>
+          <span class="table-subtext">Yazıları yoxla və redaktə et.</span>
+        </a>
+        <a class="quick-link" href="./slider.html">
+          <strong>Slider</strong>
+          <span class="table-subtext">Başlıq və vizual hissələri idarə et.</span>
+        </a>
+        <a class="quick-link" href="./contact.html">
+          <strong>Əlaqə</strong>
+          <span class="table-subtext">Gələn mesajları rahat izlə.</span>
+        </a>
+        <a class="quick-link" href="./team.html">
+          <strong>Komanda</strong>
+          <span class="table-subtext">Üzvləri və rolları idarə et.</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="toast" id="toast"></div>
+  </main>
+
+  <script src="../assets/js/mainmenu.js"></script>
+  <script src="../assets/js/anasehife.js"></script>
+</body>
+</html>
